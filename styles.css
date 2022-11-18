@@ -18,6 +18,9 @@ body{
     font-family: sans-serif;
     margin-left: 3rem;
     margin-right: 3rem;
+    overflow-x: hidden;
+    max-width: 2560px;
+    min-width: 1425px;
 }
 
 
@@ -85,6 +88,12 @@ div .restaurant{
 }
 
 /* navbar section  */
+
+
+.navbar{
+    margin-bottom: 2rem;
+}
+
 .guardarCambios{
     border: none;
     padding: 1rem 2rem;
@@ -95,8 +104,7 @@ div .restaurant{
     color: rgb(209, 196, 196);
     cursor: pointer;
     text-align: center;
-    transition: background 250ms ease-in-out, 
-                transform 150ms ease;
+    
 }
 
 #myBtn i{
@@ -130,8 +138,7 @@ div .restaurant{
     color: black;
     cursor: pointer;
     text-align: center;
-    transition: background 250ms ease-in-out, 
-                transform 150ms ease;
+    
     
 }
 
@@ -202,9 +209,8 @@ div .restaurant{
 }
 
 
-
- /* The Modal (background) */
- .modal {
+/* The Modal (background) */
+.modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -248,3 +254,135 @@ div .restaurant{
     cursor: pointer;
   } 
 
+
+
+/* Restaurante.html */
+
+.banner{
+    display: flex;  
+    overflow: hidden;
+}
+
+.banner img{
+    max-width: 150%;
+    width: 150%;
+    margin-top: -32rem;
+    margin-bottom: -32rem;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    
+    width: 100%;
+}
+
+.sidebar{
+    margin-top: 2rem;
+}
+.detalleMenu li{
+   
+    list-style: none;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.detalleMenu a{
+    text-decoration: none;
+    
+}
+.detalleMenu a:visited{
+    color: black
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 32%); 
+    gap: 2rem;
+    position: relative;
+}
+
+.item{
+    display: grid;
+    
+    width: 20vw;
+}
+
+
+.itemDescription{
+    font-size: 2vh;
+}
+.description-button{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.itemDescription .addItem{
+    background-color: rgb(238, 238, 238);
+    max-width: fit-content;
+    border-radius: 15%;
+}
+
+.itemDescription i{
+    color: black;
+    font-size: 5rem;
+}
+
+.item .descriptionPhoto{
+    width: 33rem;
+
+}
+
+.menu{
+    padding-top: 2rem;
+}
+ 
+
+/* Producto.html */
+
+.contenedor{
+    margin: auto;
+    width: fit-content;
+}
+
+.producto{
+    display: flex;
+    padding-top: 5rem;
+}
+
+.descripcion{
+    padding-bottom: 1rem;
+}
+
+.foto-producto{
+    margin-right: 2rem;
+}
+
+.foto-producto img{
+    border-radius: 15%;
+}
+.descripcion-producto{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+.descripcion-producto .select{
+    width: 30px;
+    margin-bottom: 1rem;
+    
+}
+.descripcion-producto button{
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    margin: 0;
+    text-decoration: none;
+    background: black;
+    color: #ddd;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+    
