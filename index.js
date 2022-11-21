@@ -23,3 +23,13 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 } 
+
+function openNav() {
+  document.getElementById("miCarrito").style.width = "25%";
+  document.getElementById("cart").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("miCarrito").style.width = "0";
+  document.getElementById("cart").style.marginLeft= "0";
+}

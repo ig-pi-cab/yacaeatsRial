@@ -8,6 +8,8 @@
 *{
     padding: 0;
     margin: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 html{
@@ -92,6 +94,8 @@ div .restaurant{
 
 .navbar{
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .guardarCambios{
@@ -142,7 +146,7 @@ div .restaurant{
     
 }
 
-#searchBar input{
+.searchBar input{
     padding: 6px;
     margin-top: 8px;
     font-size: 1.5rem;
@@ -160,11 +164,22 @@ div .restaurant{
     font-size: 2rem;
     border: none;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 100%;
 
 }
 
-#searchBar button{
+.cartButton{
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: inherit;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.searchBar button{
     
     padding: 6px;
     margin-top: 8px;
@@ -338,6 +353,13 @@ div .restaurant{
     padding-top: 2rem;
 }
  
+.volver-restaurant{
+    margin-top: 30px;
+}
+.volver-restaurant a{
+    
+    font-size: 2rem;
+}
 
 /* Producto.html */
 
@@ -366,6 +388,7 @@ div .restaurant{
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
+    
 }
 .descripcion-producto .select{
     width: 30px;
@@ -385,4 +408,133 @@ div .restaurant{
 }
 
 
+/* Footer */
+footer{
+    display: grid;
+    width: 100vw;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
     
+}
+ .inner_footer{
+    
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+ .inner_footer .logo_container{
+    width: 35%;
+    float: left;
+    height: 100%;
+    display:block;
+}
+ .inner_footer .logo_container img{
+    width: 45%;
+    height: auto;
+}
+
+.inner_footer .footer_third{
+    width: calc(21.666666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+    
+}
+
+.inner_footer .footer_third:last-child{
+    margin-right: 0;
+}
+
+.inner_footer .footer_third h1{
+    font-size: 2rem;
+    color: black;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inner_footer .footer_third a{
+    font-size: 13px;
+    color: grey;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.inner_footer .footer_third li{
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.footer_third i{
+    font-size: 2vh;
+}
+
+.footer_third span{
+    color: black;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+}
+
+
+/* SideBar carrito */
+
+
+
+.miCarrito {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: White;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    box-shadow: 3px 3px 3px 3px black;
+    
+}
+
+.mainCarrito{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+
+.mainCarrito .add{
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    margin: 0;
+    text-decoration: none;
+    background: rgb(238, 238, 238);
+    color: black;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.mainCarrito, .addContainer, .select-itemPrecio-foto, .descripcion{
+    margin-top: 20px;
+}
+.select-itemPrecio-foto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.miCarrito a {
+    color: #818181;
+    display: block;
+}
+
+.closebtn{
+    font-size: 3rem;
+}

@@ -10,47 +10,49 @@
 </head>
 <body>
     <header class="header" id="">
-        <ul class="navbar" >
-           
-            <li>
-                <a href="#"> 
-                    <img src="/assets/images/categorias/yacaeatsicon2.png" alt="Imagen de Yaca Eats" width="200px">
-                </a>
-            </li>
-            <li>
-                <button id="myBtn">
-                    <i class="fa fa-location-dot"></i>Dominica 404
-                </button>
-            </li>
-            <li id="searchBar">
-                <input type="text" placeholder="Pizza">
-                <button type="button">
-                    <i class="fa fa-magnifying-glass"></i>
-                </button>
-            </li>
-            <li>
-                <button class="userButton" type="button"><i class="fa-solid fa-user"></i></button>
-            </li>
-            
-                
-            
-        </ul>
+        
+
+            <nav class="navbar">
+                <div class="logo">
+                    <a href=""><img src="/assets/images/categorias/yacaeatsicon2.png"
+                        width="200px" alt=""></a>
+                </div>
+                <div class="direccionSetter">
+                    <button id="myBtn">
+                        <i class="fa fa-location-dot"></i>Dominica 404
+                    </button>
+                </div>
+                <div class="searchBar">
+                    <input type="text" placeholder="Pizza">
+                    <button type="button">
+                        <i class="fa fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="login-cart" id="cart">
+                    
+                    <button class="userButton" type="button"><i class="fa-solid fa-user"></i></button>
+                    <button class="cartButton"  onclick="openNav()" type="button"><i class="fa fa-cart-shopping"></i></button>
+                </div>
+            </nav>
+        
+        </header>
         
 
     </header>
     <section>
-        <div class="volver-restaurant">
-            <a href=""><i class="fa-solid fa-arrow-left"></i> Volver</a>
-        </div>
+        
     </section>
 
     <section class="contenedor">
+        <div class="volver-restaurant">
+            <a href=""><i class="fa-solid fa-arrow-left"></i> Volver a NOMBRE RESTAURANT</a>
+        </div>
         <div class="producto">
             <div class="foto-producto">
                 <img width="400PX" src="https://images.pexels.com/photos/271715/pexels-photo-271715.jpeg?cs=srgb&dl=pexels-pixabay-271715.jpg&fm=jpg&_gl=1*1f79mul*_ga*MTkyNjM3MTAyMi4xNjY4Nzc2MzU5*_ga_8JE65Q40S6*MTY2ODc3NjM2MC4xLjEuMTY2ODc3NjM2Ni4wLjAuMA.." alt="">
            </div>
            <div class="descripcion-producto">
-            <h1 class="descripcion titulo">Uzumaki Naruto</h1>
+            <h1 class="descripcion producto">Uzumaki Naruto</h1>
             <h2 class="descripcion precio">CLP 600</h2>
             <p class="descripcion desc">Rico rico sushi</p>
             <div class="select">
@@ -66,15 +68,87 @@
             </div>
             
             <button class="descripcion boton-producto">
-                agregar 1 a la orden - precio CLP600
+                agregar 1 al pedido - precio CLP600
             </button>
            </div>
         </div>
     
     </section>
 
+    <footer>
+        <div class="inner_footer">
+            <div class="logo_container">
+                <img src="/assets/images/YacaEats.png" alt="">
+            </div>   
+            
+            <div class="footer_third">
+                <a href="#">Need Help?</a>
+                <a href="#">Terminos y condiciones</a>
+                <a href="#">Politica de privacidad</a>
+                <a href="#">Tarifas</a>
+            </div>
+            <div class="footer_third">
+                <a href="#">Restaurantes cerca de mi</a>
+                <a href="#">Ver todas las ciudades</a>
+                <a href="#">Ver todos los paises</a>
+                <a href="#">Recoger cerca de mi</a>
+            </div>
+            <div class="footer_third">
+                <a href="#">Acerca de Uber Eats</a>
+                <a href="#">Idioma</a>
+            </div>
+            <div class="footer_third">
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <span>598 Wilson Road
+                Doylestown, PA 18901 </span>
+            </div>
+
+    </footer>
 
         
+<div class="miCarrito cs" id="miCarrito">
+    <div class="mainCarrito">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#"><h1 class="cs">Nombre Restaurante</h1></a>
+        <p>Dominica 404</p>
+        <div class="addContainer">
+            <button class="add" >Agregar mas articulos</button>
+        </div>
+        
+        
+        <div class="select-itemPrecio-foto">
+            <div class="items">
+                <div class="select">
+                    <select class="cantidad" name="" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+            </div>
+            <div class="item-precio">
+                <p>Uzumaki Naruto</p>
+                <p>600</p>
+            </div>
+            <div class="img-container">
+                <img width="200px" src="https://images.pexels.com/photos/271715/pexels-photo-271715.jpeg?cs=srgb&dl=pexels-pixabay-271715.jpg&fm=jpg&_gl=1*1f79mul*_ga*MTkyNjM3MTAyMi4xNjY4Nzc2MzU5*_ga_8JE65Q40S6*MTY2ODc3NjM2MC4xLjEuMTY2ODc3NjM2Ni4wLjAuMA.." alt="">
+            </div>
+        </div>
+        
+        <button class="descripcion boton-producto">
+            Pagar - precio CLP600
+        </button>
+    </div>
+        
+
+</div>
+    
 
 <div id="myModal" class="modal">
   <div class="modal-content">
