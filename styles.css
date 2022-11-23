@@ -14,6 +14,7 @@
 
 html{
     font-size: 65.2%;
+    height: 100%;
 }
 
 body{
@@ -23,6 +24,7 @@ body{
     overflow-x: hidden;
     max-width: 2560px;
     min-width: 1425px;
+    min-height: 100%;
 }
 
 
@@ -273,6 +275,12 @@ div .restaurant{
 
 /* Restaurante.html */
 
+
+.main-restaurant{
+    
+    padding-right: 10%;
+}
+
 .banner{
     display: flex;  
     overflow: hidden;
@@ -310,17 +318,26 @@ div .restaurant{
     color: black
 }
 
+.one{
+    width: 50%;
+}
+
 .items{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 32%); 
+    grid-template-columns: repeat(3, 1fr); 
     gap: 2rem;
     position: relative;
+    
+    grid-template-rows: repeat(300px);
+
 }
+
+
 
 .item{
     display: grid;
-    
-    width: 20vw;
+    width: 100%;
+
 }
 
 
@@ -345,7 +362,7 @@ div .restaurant{
 }
 
 .item .descriptionPhoto{
-    width: 33rem;
+    max-width: 33rem;
 
 }
 
@@ -387,8 +404,13 @@ div .restaurant{
 .descripcion-producto{
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
+    justify-content: space-evenly;
+    padding-left: 20px;
     
+}
+
+.descripcion-producto> h1,h2 {
+     display: inline;
 }
 .descripcion-producto .select{
     width: 30px;
@@ -415,6 +437,7 @@ footer{
     overflow: hidden;
     padding: 70px 0;
     box-sizing: border-box;
+    margin-top: auto;
     
 }
  .inner_footer{
@@ -460,7 +483,7 @@ footer{
     font-size: 13px;
     color: grey;
     display: block;
-    width: 100%;
+    width: fit-content;
     margin-bottom: 10px;
 }
 
@@ -495,7 +518,7 @@ footer{
     right: 0;
     background-color: White;
     overflow-x: hidden;
-    transition: 0.5s;
+    
     padding-top: 20px;
     box-shadow: 3px 3px 3px 3px black;
     
@@ -505,6 +528,9 @@ footer{
     display: flex;
     align-items: left;
     flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    overflow: none;
 }
 
 .mainCarrito .add{
@@ -531,8 +557,22 @@ footer{
 
 
 .miCarrito a {
-    color: #818181;
+    color: black;
     display: block;
+    padding-bottom: 1rem;
+}
+
+.boton-producto{
+    
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    margin: 0;
+    text-decoration: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    text-align: center;
 }
 
 .closebtn{
