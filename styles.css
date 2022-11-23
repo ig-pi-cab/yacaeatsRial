@@ -30,7 +30,7 @@ body{
 
 /* restaurant section */
 
-.restaurantes{
+/* .restaurantes{
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     gap: 1rem;
@@ -66,6 +66,54 @@ div .restaurant{
     .restaurant{
         width: 2rem;
     }
+} */
+
+.restaurantes{
+    margin-top: 2rem;
+}
+
+.section-title{
+    
+}
+
+.restaurantes-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-img{
+    width:100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.restaurant-box{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.product-title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.envio{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.restaurant-info span{
+    margin-left: 1rem;
+}
+.restaurant-info{
+    display: flex;
+    
 }
 
 /* categories section */
